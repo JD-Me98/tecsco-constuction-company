@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Noto-serif';
-    src: url('../fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf') format('woff2'),
-         url('../fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf') format('woff');
+    src: url('/fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf') format('woff2'),
+         url('/fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth\,wght.ttf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +29,7 @@
 
 body{
     font-size: var(--text-regular);
-    background-image: url("../images/fifi-k1.webp");
+    background-image: url("/images/hero-image.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -56,7 +56,7 @@ nav{
     color: var(--text-color);
 }
 .hero-section{
-    height: 100vh;
+    height: 95vh;
     background-image: 
     linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
     background-size: cover;
@@ -73,23 +73,23 @@ nav{
 
 /*Section 2 steps*/
 
-.plans-section{
+.steps-section{
     display: flex;
-    flex-direction: column;
     padding: 70px 100px;
     gap: 50px;
     background-color: var(--accent-color);
 }
 
-.plans-left{
-    width: 100%;
+.steps-left{
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 40px;
 }
 
-.plans-left-p{
+.steps-left-p{
     color: var(--neutral-color);
     font-size: var(--text-medium);
 }
@@ -101,8 +101,8 @@ nav{
 }
 
 
-.plans-right{
-    width: 100%;
+.steps-right{
+    width: 50%;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -112,38 +112,16 @@ nav{
 }
 
 .right-content{
-    padding: 30px;
-    border-radius: 15px;
     display: flex;
-    width: 28%;
     flex-direction: column;
-    gap:10px;    
-    background-image: 
-    linear-gradient(to right, rgba(211, 84, 0, 0.7), rgba(211, 84, 0, 0.7)),
-    url('/images/how-to-draw-floorplan.jpg');
+    gap:10px;
 }
 .right-content p{
-    color: var(--text-light);
-}
-
-.btn-white{
-    background-color: var(--accent-color);
-    padding: 15px;
-    text-decoration: none;
-    color: #4d4d4d;
-    text-align: center;
-    border-radius: 15px;
-    width: 80%;
-    margin: auto;
-    font-size: var(--text-regular);
-}
-.btn-white:hover{
-    background-color: #d38957;
-    color: #ffffff;
+    color: #6E6E6E;
 }
 
 .right-content h2{
-    color:#f6c8aa;
+    color:var(--primary-color);
 }
 
 .hero-content{
@@ -159,8 +137,8 @@ nav{
     font-size: 1.6rem;
 }
 .icon-img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 .icon-color{
@@ -176,7 +154,7 @@ nav{
 .action-btn:hover{
     background-color: #d38957;
 }
-.plans-left-actions{
+.steps-left-actions{
     align-self:baseline;
 }
 
@@ -281,7 +259,7 @@ nav{
     gap: 40px;
     background-image: 
     linear-gradient(to right, rgba(81, 81, 81, 0.9), rgba(81, 81, 81, 0.9)),
-    url('../images/josue-isai-ramos-figueroa-Pj4je7OjrME-unsplash.jpg');
+    url('/images/josue-isai-ramos-figueroa-Pj4je7OjrME-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -401,92 +379,3 @@ nav{
     justify-content: end;
     gap: 50px;
 }
-.action-banner{
-    background-color: #d38957;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 35px;
-    color: var(--text-light);
-}
-.action-banner-btn{
-    background-color: var(--primary-color);
-    text-decoration: none;
-    color: var(--text-light);
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.action-banner-btn:hover{
-    background-color: #f1a26d;    
-}
-
-.renovate-or-build{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 50px;
-}
-
-.renovate-or-build h1{
-    font-size: 48px;
-    color: #4d4d4d;
-}
-.renovate-or-build p{
-    color: #4d4d4d;
-    font-size: var(--text-medium);
-}
-
-.renovate-or-build-choice{
-    width: 100%;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-
-.build{
-    background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('/images/fifi-k1.webp');
-    background-size: cover;
-}
-
-.build, .renovate{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 20px;
-    color: var(--text-light);
-    border-radius: 15px;
-    width:50%;
-    height: 70vh;
-    
-}
-.build h1, .renovate h1{
-    color: var(--text-light);
-    font-size: 24px;
-}
-.build div, .renovate div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.build div a, .renovate div a{
-    margin: 0;
-    align-self: baseline;
-    padding: 15px 30px;
-    width: auto;
-}
-
-.renovate{
-    background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('/images/kara-eads-L7EwHkq1B2s-unsplash.jpg');
-    background-size: cover;
-}
-
