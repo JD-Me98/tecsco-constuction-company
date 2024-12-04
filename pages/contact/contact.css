@@ -311,7 +311,7 @@ body{
     gap: 40px;
     background-image: 
     linear-gradient(to right, rgba(81, 81, 81, 0.9), rgba(81, 81, 81, 0.9)),
-    url('../images/josue-isai-ramos-figueroa-Pj4je7OjrME-unsplash.jpg');
+    url('/images/the-destination-front-rendering.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -522,5 +522,90 @@ body{
 
 
 
+/*contacts-section*/
+.contact-section{
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 50px;
+    gap: 40px;
+}
 
-/*Renovations*/
+.contact-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-heading h1 {
+    font-size: 48px;
+    padding-left: 15px;
+    border-left: solid 6px var(--primary-color);
+    color: #4d4d4d;
+}
+.contact-section p{
+    padding-left: 30px;
+    font-size: var(--text-medium);
+    color: #6E6E6E;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5e6e1;
+    padding: 50px 100px;
+    border-radius: 15px;
+    gap: 40px;
+    flex-grow: 1;
+}
+
+.contact-card{
+    display: flex;
+    gap: 20px;
+}
+
+.contact-card .card-icon{
+    display: flex;
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d38957;
+    border-radius: 50%;
+    padding: 10px;
+}
+.contact-card .card-icon img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: invert(100%) sepia(0%) saturate(0%);
+}
+
+.contact-card .card-info{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--text-medium);
+    color: #4d4d4d;
+}
+
+.contact-card .card-info span:first-child{
+    color: #d35400;
+}
+
+.contact-right{
+    border-radius: 15px;
+    width: 35%;
+    height: inherit;
+    overflow: hidden;
+}
+.contact-right img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-content{
+    padding: 10px 50px;
+    display: flex;
+    gap: 15px;
+}
