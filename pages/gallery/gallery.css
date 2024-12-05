@@ -29,16 +29,14 @@
 
 body{
     font-size: var(--text-regular);
-    background-image: url("/images/fifi-k1.webp");
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 
 .hero-section{
     height: 80vh;
     background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+    url("/images/fifi-k1.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +76,7 @@ body{
 
 .gallery-img-card{
     width:30%;
-    height: 55vh;
+    min-height: 55vh;
     box-shadow: 0px 2px 5px #999999;
     transition: ease-out 0.2s;
 }
@@ -106,6 +104,7 @@ body{
     justify-content: center;
     text-align: center;
     text-transform:uppercase;
+    padding: 10px;
 }
 
 
@@ -325,4 +324,98 @@ body{
     linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('/images/kara-eads-L7EwHkq1B2s-unsplash.jpg');
     background-size: cover;
+}
+
+@media (max-width: 868px) {
+
+    :root {
+        --primary-color: #d35400 ;/* Blue */
+        --accent-color:  #ffffff;/* Orange */
+        --neutral-color: #6E6E6E; /* Gray */
+        --text-color: #000000; /* Black */
+        --text-light: #ffffff; /* White */
+    
+        --font-heading: 24px;
+        --font-title: 18px;
+        --text-regular: 11px;
+        --text-medium: 14px;
+    
+      }
+
+    body{
+        overflow-x: hidden;
+    }
+    /*hero section*/
+    .hero-section{
+        padding: 100px 20px;
+    }
+
+    .hero-title h1{
+        font-size: var(--font-heading);
+    }
+
+    .hero-p p{
+        font-size: var(--font-medium);
+    }
+
+    /*gallery section*/
+    .gallery-section{
+        padding: 40px;
+    }
+    .gallery-img-card{
+        min-width: 300px;
+        height: 50vh;
+        flex-grow: 1;
+    }
+
+    .img-title{
+        font-size: var(--text-medium);
+        padding-top: 30px;
+    }
+
+    /*form section*/
+    .form-section{
+        padding: 30px;
+        font-size: var(--text-regular);
+    }
+    .form-section-heading h1{
+        font-size: var(--font-title);
+    }
+
+    form .form-inputs{
+        flex-direction: column;
+    }
+    .form-inputs input{
+        width: 100%;
+    }
+    .projects-list{
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width:800){
+    .gallery-img-card{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    .hero-title{
+        font-size: 18px;
+    }
+
+    /*gallery section*/
+
+    .gallery-img-card{
+        min-width: 80%;
+    }
+
+    /*footer section*/
+    .footer-section{
+        flex-direction: column;
+        padding: 20px;
+    }
+    
 }

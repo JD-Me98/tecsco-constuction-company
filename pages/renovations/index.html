@@ -6,6 +6,7 @@
     <title>Renovations</title>
     <link rel="stylesheet" href="renovations.css">
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
     <section class="nav-section">
@@ -19,6 +20,7 @@
                     <li><a href="/pages/contact/">Contact</a></li>
                 </u>
             </nav> 
+            <button class="toggle-btn"><img src="/icons/menu.png" alt="" width="24" height="24"></button>
         </nav>
     </section>
     <section class="hero-section">
@@ -118,7 +120,7 @@
                 Benefit from over 40 years of custom renovation and contracting experience. Get a free estimate and design guidance for your renovation from Tecsco Homes. Call or fill out the form below to plan a conversation with our team. </p></div>
         </div>        
         <div class="section-form">
-            <form action="">
+            <form id="contactForm" action="">
                 <div class="form-inputs">
                     <input name="name" id="name" type="text" placeholder="Name">
                     <input name="email" id="email" type="text" placeholder="Email">
@@ -168,5 +170,7 @@
             </div>
         </div>
     </section>
+    <script src="/scripts/menu-button.js"></script>
+    <script src="/scripts/store-data.js"></script>
 </body>
 </html>

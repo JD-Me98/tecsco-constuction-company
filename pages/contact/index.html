@@ -6,6 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
     <section class="nav-section">
@@ -19,6 +20,7 @@
                     <li><a class="active" href="/pages/contact/">Contact</a></li>
                 </u>
             </nav> 
+            <button class="toggle-btn"><img src="/icons/menu.png" alt="" width="24" height="24"></button>
         </nav>
     </section>
     <section class="hero-section">
@@ -81,7 +83,7 @@
             </div>
         </div>        
         <div class="section-form">
-            <form action="">
+            <form id="contactForm" action="">
                 <div class="form-inputs">
                     <input name="name" id="name" type="text" placeholder="Name">
                     <input name="email" id="email" type="text" placeholder="Email">
@@ -131,5 +133,7 @@
             </div>
         </div>
     </section>
+    <script src="/scripts/menu-button.js"></script>
+    <script src="/scripts/store-data.js"></script>
 </body>
 </html>

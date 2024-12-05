@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Delete LocalStorage Data</title>
+    <link rel="stylesheet" href="admin.css  ">
+    <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+<body>
+    <section class="nav-section">
+        <nav>
+            <div class="logo"><a href="/"> <img src="/images/Tecsco_Logo-removebg-preview.png" width="40%" alt="logo"> </a></div>
+            <nav class="nav-bar">
+                <span>Admin Page</span>
+            </nav>
+            <button class="toggle-btn"><img src="/icons/menu.png" alt="" width="24" height="24"></button>
+        </nav>
+    </section>
+    <section class="messages-section">
+        <h1>Customer's submitted Messages</h1>
+            <div class="data-container" id="dataContainer">
+                <!-- LocalStorage data will appear here -->
+            </div>
+    </section>
+    <script src="/scripts/get-data.js"></script>
+</body>
+</html>

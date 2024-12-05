@@ -55,3 +55,75 @@ nav{
     color: #d35400;
     font-weight: bold;
 }
+
+.toggle-btn{
+    display: none;
+}
+.toggle-btn img{
+    filter: invert(100%);
+}
+
+@media (max-width: 868px) {
+    .nav-bar {
+        display: flex;
+        opacity: 0;
+        flex-direction: column;
+        gap: 1em;
+        background-color: var(--accent-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        transition: ease-out .4s;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-bar.active{
+        display: flex;
+        opacity: 100;
+        flex-direction: column;
+        padding: 60px;
+        position: fixed;
+        top: 85px;
+        transition: ease-in .4s;
+    }
+
+    .toggle-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--primary-color);
+        color: var(--text-light);
+        border: none;
+        cursor: pointer;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 768){
+    .hero-title h1 {
+        font-size: 24px;
+    }
+
+    .hero-p p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title h1 {
+        font-size: 24px;
+    }
+
+    .hero-p p {
+        font-size: 16px;
+    }
+}

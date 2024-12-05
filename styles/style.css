@@ -29,20 +29,17 @@
 
 body{
     font-size: var(--text-regular);
-    background-image: url("/images/fifi-k1.webp");
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 
 .hero-section{
-    height: 100vh;
+    min-height: 100vh;
     background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+    url("/images/fifi-k1.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
 
     display: flex;
     justify-content: center;
@@ -379,58 +376,7 @@ body{
     font-size: var(--text-medium);
 }
 
-.footer-section{
-    background-color: var(--primary-color);
-    color: var(--text-light);
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    gap: 50px;
-}
-.projects-list{
-    padding-top: 10px;
-    display: flex;
-    gap: 10px;
-}
-.footer-img{
-    width: 150px;
-    height: 100px;    
-}
 
-.footer-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    gap: 10px;
-}
-
-.icon-img{
-    width: 24px;
-    height: 24px;
-
-    filter: invert(70%) sepia(70%) saturate(2000%) hue-rotate(10deg);
-}
-.contact-span{
-    display: flex;
-    gap: 10px;
-}
-.footer-left{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.links-list{
-    padding-top: 10px;
-    display: flex;
-    justify-content: end;
-    gap: 50px;
-}
 .action-banner{
     background-color: #d38957;
     display: flex;
@@ -521,6 +467,134 @@ body{
 }
 
 
+@media (max-width: 868px) {
+
+    :root {
+        --primary-color: #d35400 ;/* Blue */
+        --accent-color:  #ffffff;/* Orange */
+        --neutral-color: #6E6E6E; /* Gray */
+        --text-color: #000000; /* Black */
+        --text-light: #ffffff; /* White */
+    
+        --font-heading: 24px;
+        --font-title: 18px;
+        --text-regular: 11px;
+        --text-medium: 14px;
+    
+      }
+
+    body{
+        overflow-x: hidden;
+    }
+    /*hero section*/
+    .hero-section{
+        padding: 100px 20px;
+    }
+
+    .hero-title h1{
+        font-size: var(--font-heading);
+    }
+
+    .hero-p p{
+        font-size: var(--font-medium);
+    }
+
+    /*banner section*/
+    .action-banner{
+        flex-direction: column;
+    }
+
+    /*plans section*/
+    .plans-section{
+        padding: 20px;
+    }
+    .plans-left h1{
+        font-size: var(--font-title);
+    }
+
+    .plans-left p{
+        font-size: var(--text-medium);
+    }
+
+    .plans-right{
+        flex-direction: column;
+    }
+
+    .plans-right .right-content{
+        width: 100%;
+    }
+
+    .right-content a{
+        align-self: center;
+    }
+
+    /*renovate or build section*/
+    .renovate-or-buid h1{
+        font-size: var(--font-title);
+    }
+
+    .renovate-or-buid p{
+        font-size: var(--text-medium);
+    }
+    .action-btn h2{
+        font-size: 18px;
+    }
+
+    .renovate-or-build-choice{
+        flex-direction: column;
+    }
+    .renovate-or-build-choice .build, .renovate{
+        width: 100%;
+    }
+
+    .facts-section{
+        height: 90vh;
+    }
+
+    .fact h1{
+        font-size: 32px;
+    }
+    .fact p{
+        font-size: var(--text-medium);
+        text-align: center;
+    }
+
+    /*form section*/
+    .form-section{
+        padding: 30px;
+        font-size: var(--text-regular);
+    }
+    .form-section-heading h1{
+        font-size: var(--font-title);
+    }
+
+    form .form-inputs{
+        flex-direction: column;
+    }
+    .form-inputs input{
+        width: 100%;
+    }
+    .projects-list{
+        flex-wrap: wrap;
+    }
 
 
-/*Renovations*/
+}
+@media (max-width: 600px){
+    .hero-title{
+        font-size: 18px;
+    }
+
+    /*footer section*/
+    .footer-section{
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+}
+
+@media (max-width:500px){
+    .hero-section{
+        min-height: 50vh;
+    }
+}
